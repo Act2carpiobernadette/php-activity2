@@ -1,29 +1,35 @@
+<?php
+// Berna
 
-    /*
-    fullname:Bernadette C. Carpio
-    age;20
-    cys:ACT2B
-    address:st.Gunao San Jose Paombong Bulacan
-    */
-    
-    <?php 
-    $name="Bernadette";
-    $age=20;
-    $address="Paombong,Bulacan,San jose";
-    $hobbies="playing online games";
-    $dream_job="N/A";
-    $course="Asssociate in Computer Technology";
-    $school="Bulacan Polytechnic College";
-    
-    echo "<h2>My Personal Information</h2>";
-    echo "<p><strong>Name:</strong> " . $me["name"] . "</p>";
-    echo "<p><strong>Age:</strong> " . $me["age"] . "</p>";
-    echo "<p><strong>Address:</strong> " . $me["address"] . "</p>";
-    echo "<p><strong>Hobbies:</strong> " . $me["hobbies"] . "</p>";
-    echo "<p><strong>Dream Job:</strong> " . $me["dream_job"] . "</p>";
-    echo "<p><strong>Course:</strong> " . $me["course"] . "</p>";
-    echo "<p><strong>School:</strong> " . $me["school"] . "</p>";
-    
-    print "I am " . $me{"name"} . ", a " . $me{"course"} . " student of " . $me{"school"} . ".";
-    ?>
- 
+/*
+Full Name: Bernadette C. Carpio
+Age: 20
+Course & Section: ACT2B
+Address: St. Gunao San Jose Paombong Bulacan
+Hobbies: Playing online games
+Dream Job: N/A
+Course: Associate in Computer Technology
+School: Bulacan Polytechnic College
+*/
+
+$me = [
+    "name" => "Bernadette",
+    "age" => 20,
+    "address" => "St. Gunao San Jose Paombong Bulacan",
+    "hobbies" => "playing online games",
+    "dream_job" => "N/A",
+    "course" => "Associate in Computer Technology",
+    "school" => "Bulacan Polytechnic College"
+];
+
+echo "My Personal Information\n";
+echo "Name:   " . $me["name"] . "\n";
+echo "Age:    " . $me["age"] . "\n";
+echo "Address: " . $me["address"] . "\n";
+echo "Hobbies: " . $me["hobbies"] . "\n";
+echo "Dream Job: " . $me["dream_job"] . "\n";
+echo "Course: " . $me["course"] . "\n";
+echo "School: " . $me["school"] . "\n";
+
+print "\nI am " . $me["name"] . ", a " . $me["course"] . " student of " . $me["school"] . ".";
+?>
